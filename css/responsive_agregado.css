@@ -1,0 +1,94 @@
+/* Para dispositivos móviles:
+ */
+/* Smartphones en orientación vertical y horizontal */
+@media only screen and (max-width: 800px) {
+    /* Estilos para dispositivos móviles */
+
+    .search-tab-desktop
+
+    /* quitar buscador desktop en movile */
+        {
+
+        display: none;
+
+
+    }
+
+    .car-top {
+        display: none;
+    }
+
+#rev_slider_5_1_wrapper{
+    display: none!important;
+}}
+/* 
+#header{
+    position: fixed!important
+   
+
+
+}  */
+
+/* #video-background{
+    margin-top: 50px;
+}
+
+}
+ */
+
+
+
+/* Smartphones en orientación vertical */
+@media only screen and (max-width: 480px) {
+    /* Estilos adicionales para dispositivos móviles en orientación vertical */
+
+
+}
+
+
+/* Para dispositivos de pantalla pequeña (como tablets):
+ */
+/* Tablets en orientación vertical y horizontal */
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+
+
+}
+
+
+
+/* Para laptops y pantallas medianas:
+ */
+/* Laptops y pantallas medianas en orientación horizontal */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos para laptops y pantallas medianas en orientación horizontal */
+
+}
+
+
+
+
+/* Para pantallas de escritorio:
+ */
+
+/* Pantallas de escritorio en orientación horizontal */
+@media only screen and (min-width:800px) {
+    /* Estilos para pantallas de escritorio en orientación horizontal */
+
+    .search-tab-movile {
+        display: none;
+
+    }
+
+    #video-background {
+        margin-bottom: 10px;
+    }
+
+    .carousel-diseños-movile{
+        display:none;
+    }
+
+
+
+
+}

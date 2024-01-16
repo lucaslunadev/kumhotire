@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="js/script.js"></script>
+<body>
+    
+ 
+    <form role="form" action="">
+ 
+        <div class="form-group">
+            <label for="titulo" class="negrita2">Titulo</label>
+            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ingresa el titulo" onload="crearURL(this.value)" onkeyup="crearURL(this.value)" required>
+            <p><strong>URL en Texto:</strong> <span id="texto-url"></span></p>
+        </div>
+     
+        <div class="form-group">
+            <label for="url" class="negrita2">URL Amigable (Slug)</label>
+            <input type="text" class="form-control" id="url" name="url" readonly>
+        </div>
+     
+        <div class="form-group">
+            <label for="contenido" class="negrita2">Contenido</label>
+            <textarea class="form-control" id="contenido" name="contenido" rows="3" required></textarea>
+        </div>
+     
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+        <button type="reset" class="btn btn-danger">Limpiar</button>
+     
+    </form>
+
+</body>
+</html>

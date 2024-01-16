@@ -1,0 +1,152 @@
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body{
+  font-family: 'Noto Sans Display', sans-serif!important;
+  background-color: rgba(0, 0, 0)!important;
+}
+
+
+
+/*para acomodar buscador en bottom */
+#video-background {
+  position: relative!important;
+
+
+     } 
+/*para acomodar buscador en bottom */
+  .search-tab-desktop {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    /* padding-bottom: 20px; */ /* Ajusta este valor según sea necesario para dar espacio al buscador */
+  }
+
+
+ .tabcontent-row{
+   justify-content:
+   center;
+  
+ }
+
+
+  .select-options{
+    position: absolute!important
+ }
+ 
+
+ 
+/* external css: flickity.css */
+
+/* * { box-sizing: border-box; }
+ */
+
+/* .carousel {
+  background: #EEE;
+} */
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: carousel-cell;
+  background-image: url(/htdocs/revolution/assets/6a297-car-02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+
+
+
+
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  background-color: #8C8;
+}
+
+
+footer{
+  padding: 10px;
+}
+
+h1{
+  font-size:clamp(5px , 10vw , 50px)!important; 
+  font-weight: 900!important; color: rgb(255, 255, 255)!important;
+}
+
+h6{
+  color: rgb(255, 255, 255)!important;
+  font-family: 'Noto Sans Display', sans-serif!important;
+  font-size:1.5em!important;
+}
+
+h5{
+  font-weight: 500!important; color: rgb(255, 255, 255)!important;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --background-color: black;
+  --text-color: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  place-content: center;
+  background-color: var(--background-color);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 6rem); /* Adjusted for the container size */
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color);
+  width: 100%; /* Full width */
+  height: 100%!important; /* Full height */
+  position: relative; /* New Addition */
+}
+
+.wrapper > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%); /* For Safari */
+}
+
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%); /* For Safari */
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translate(-50%, -50%) translateX(-0.02em);
+}
