@@ -103,50 +103,56 @@ h5{
 
 }
 
-
+/* 
 * {
   box-sizing: border-box;
-}
-:root {
+} */
+/* :root {
   --background-color: black;
   --text-color: hsl(0, 0%, 100%);
-}
-body {
+} */
+/* body {
   margin: 0;
-}
-.wrapper {
+} */
+/* .wrapper {
   display: grid;
   place-content: center;
   background-color: var(--background-color);
   font-family: "Oswald", sans-serif;
-  font-size: clamp(1.5rem, 5vw, 6rem); /* Adjusted for the container size */
+  font-size: clamp(1.5rem, 5vw, 6rem); 
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text-color);
-  width: 100%; /* Full width */
-  height: 100%!important; /* Full height */
-  position: relative; /* New Addition */
+  width: 100%; 
+  height: 100%!important;
+  position: relative; 
 }
-
-.wrapper > div {
+ */
+/* .wrapper > div {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.top {
+ */
+/* .top {
   clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%); /* For Safari */
-}
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%); 
+} */
 
-.bottom {
+/* .bottom {
   clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
-  -webkit-clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%); /* For Safari */
+  -webkit-clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%); 
   color: transparent;
   background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
   background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
   background-clip: text;
   -webkit-background-clip: text;
   transform: translate(-50%, -50%) translateX(-0.02em);
+}
+ */
+
+
+ .my-custom-button:hover {
+  color: white !important;
 }
