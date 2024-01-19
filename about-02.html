@@ -671,6 +671,51 @@
  
  
 
+ <script>
+
+  // Función que se ejecuta cuando hay un evento de scroll
+  function checkScroll() {
+      const element = document.getElementById('logo_img'); // Reemplaza con el ID de tu elemento
+      const scrollClass = 'logo_scroll'; // Reemplaza con la clase que quieres agregar
+  
+      if (window.scrollY > 0) { // Si el scroll es mayor a 0, estamos bajando en la página
+          element.classList.add(scrollClass);
+      } else { // Si el scroll es 0, estamos en la parte superior de la página
+          element.classList.remove(scrollClass);
+      }
+  }
+  
+  // Agrega el evento de scroll a la ventana
+  window.addEventListener('scroll', checkScroll);
+  
+  </script>
+  
+
+
+  <style>
+.logo_scroll{
+
+  width: 10px!important;
+}
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
  <!--=================================
  back to top -->
 
