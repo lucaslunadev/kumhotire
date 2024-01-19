@@ -52,9 +52,8 @@ body{
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background: #8C8;
   counter-increment: carousel-cell;
-  background-image: url(/htdocs/revolution/assets/6a297-car-02.png);
+  background-color: #323232;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;

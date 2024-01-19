@@ -272,7 +272,7 @@ video slider -->
 
   <!--=================================
 buscador movile -->
-  <div class="search-tab-movile">
+  <div style="margin-top: 20px;" class="search-tab-movile">
     <section class="slider-parallax  bg-17 car-directory-banner "> <!-- bg-17 comentado en css -->
       <div class="slider-content-middle">
         <div class="container search-tab-movile ">
@@ -546,14 +546,26 @@ slider-1 diseños desktop -->
 
   <!-- diseños movile-->
 
-  <div style="text-align: center; margin-bottom: 10px;" class="carousel-diseños-movile">
-    <h6 class="">Diseños de vanguardia </h6>
+  <div style="text-align: center; margin: 25px 0;" class="carousel-diseños-movile">
+    <h6 style="padding-bottom: 15px;" class="">Diseños de vanguardia </h6>
     <div class="carousel" data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": true}'>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
+
+      <div class="carousel-cell">
+
+      </div>
+      <div class="carousel-cell">
+
+      </div>
+      <div class="carousel-cell">
+
+      </div>
+      <div class="carousel-cell">
+        
+      </div>
+      <div class="carousel-cell">
+
+      </div>
+      
     </div>
   </div>
 
@@ -561,23 +573,22 @@ slider-1 diseños desktop -->
 
 
 
+<div class="">
 
-
-  <div class="row" style="display: flex;">
-    <div class="col-lg-6 col-sm-12 col-md-6"
-      style="display: flex; flex-direction: column; background-image: url(images/Mountain_BG.jpg); background-size: cover; align-items: center;">
+  <div style="display: grid; grid-template-columns:repeat(2, 1fr)   ;" class="section-prestigio-at52">
+    <div   class="" style="display: flex; flex-direction: column; align-items: center; background-image: url(images/Mountain_BG.jpg); background-size: cover; justify-content: space-between ;">
 
       <!-- Imagen 1 (Arriba) -->
-      <img id="roadventure" class="" src="images/Road_Venture_AT52.png" alt=""  ;">
+      <img  id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style="width: 50%; margin-top: 20px; " >
 
 
       <!-- Imagen 2 (Abajo) -->
-      <img id="neumatico" src="images/AT52_front.png" alt="" style="width: 90%; margin-bottom: -10px!important;">
+      <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 100%">
 
     </div>
     <!-- Otros elementos si los hay -->
 
-    <div class="col-lg-6 col-sm-12 col-md-6 container-letra-1">
+    <div style="display: flex; justify-content: center;" class="">
       <div id="container-letras">
         <span id="text1"></span>
         <span id="text2"></span>
@@ -591,9 +602,11 @@ slider-1 diseños desktop -->
       </svg>
     </div>
   </div>
-  </div>
 
-  </div>
+
+</div>
+
+
 
   <script>
 
@@ -762,9 +775,9 @@ slider-1 diseños desktop -->
       text2: document.getElementById("text2")
     };
 
-    const texts = ["PERFORMANCE", "PRESTIGIO", "CONFORT", "TECNOLOGÍA"];
-    const morphTime = 2;
-    const cooldownTime = 1.5;
+    const texts = ["que tengas", "unas hermosas", "vacaciones", "mi bombón","te quiero♥"];
+    const morphTime = 0.8;
+    const cooldownTime = 1;
     let textIndex = texts.length - 1;
     let time = new Date();
     let morph = 0;

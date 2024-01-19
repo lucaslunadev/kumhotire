@@ -23,11 +23,13 @@
 }
 
 #text1, #text2{
-    font-size:35px!important;
+    font-size:40px!important;
 }
 
 #container-letras{
 padding: 10px;
+height: 25vh!important;
+
 
 }
 
@@ -41,6 +43,15 @@ padding: 10px;
 }
 
 
+ .bg-17 {
+    background-image: url(/images/bg/AirBrush_20240119163120.jpg);
+    ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}  
+
+
 
 #contenedor-imagenes{
     position: relative!important;
@@ -50,8 +61,17 @@ padding: 10px;
 }
 
 
+#roadventure{
+    width: 80%!important;
 
 
+
+}
+
+.section-prestigio-at52{
+    grid-template-columns: 1fr!important
+
+}
 
 
 
@@ -77,6 +97,12 @@ padding: 10px;
 /* Smartphones en orientación vertical */
 @media only screen and (min-width: 400px)  and (max-width: 800px)  {
     /* Estilos adicionales para dispositivos móviles en orientación vertical */
+
+#roadventure{
+
+
+    
+}
 
 
 
@@ -141,7 +167,13 @@ align-items: center!important;
         font-size:50px!important;
     }
   
+    #roadventure{
 
+
+    
+    }
+    
+    
 
 }
 
