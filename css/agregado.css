@@ -155,3 +155,32 @@ h5{
  .my-custom-button:hover {
   color: white !important;
 }
+
+.container-grid{
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+  'caja1 caja1 caja2 caja3'
+  'caja1 caja1 caja2 caja3'
+  'caja4 caja4 caja2 caja5'
+  'caja4 caja4 caja2 caja5';
+}
+
+.caja1{
+  grid-area: caja1;
+width: auto; height: 400px;
+}
+.caja2{
+  grid-area: caja2;
+  width: auto; height: auto;
+}
+.caja3{
+  grid-area: caja3;width: auto; height: 400px;
+}
+.caja4{
+  grid-area: caja4;width: auto; height: 400px;
+}
+.caja5{
+  grid-area: caja5;width: auto; height: 400px;
+}
+

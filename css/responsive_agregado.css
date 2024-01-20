@@ -41,7 +41,9 @@ height: 25vh!important;
     position: absolute!important;
 
 }
-
+.neumaticos{
+      width: 350px
+}
 
  .bg-17 {
     background-image: url(/images/bg/AirBrush_20240119163120.jpg);

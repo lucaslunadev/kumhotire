@@ -546,7 +546,7 @@ slider-1 diseños desktop -->
 
   <!-- diseños movile-->
 
-  <div style="text-align: center; margin: 25px 0;" class="carousel-diseños-movile">
+  <div style="text-align: center; margin: 25px 0;" class="carousel-diseños-movile container-fluid">
     <h6 style="padding-bottom: 15px;" class="">Diseños de vanguardia </h6>
     <div class="carousel" data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": true}'>
 
@@ -576,19 +576,14 @@ slider-1 diseños desktop -->
 <div class="">
 
   <div style="display: grid; grid-template-columns:repeat(2, 1fr)   ;" class="section-prestigio-at52">
-    <div   class="" style="display: flex; flex-direction: column; align-items: center; background-image: url(images/Mountain_BG.jpg); background-size: cover; justify-content: space-between ;">
-
-      <!-- Imagen 1 (Arriba) -->
-      <img  id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style="width: 50%; margin-top: 20px; " >
-
-
-      <!-- Imagen 2 (Abajo) -->
-      <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 100%">
-
-    </div>
+    
     <!-- Otros elementos si los hay -->
 
-    <div style="display: flex; justify-content: center;" class="">
+
+
+
+
+    <div style="display: flex; justify-content: center; align-items:center; " class="container">
       <div id="container-letras">
         <span id="text1"></span>
         <span id="text2"></span>
@@ -601,10 +596,82 @@ slider-1 diseños desktop -->
         </defs>
       </svg>
     </div>
+
+
+    <div   class="" style=" display: flex; flex-direction: column; align-items: center; background-image: url(images/Mountain_BG.jpg); background-size: cover; justify-content: space-between ;">
+
+      <!-- Imagen 1 (Arriba) -->
+      <img  id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style=" margin-top: 20px;  " >
+
+
+      <!-- Imagen 2 (Abajo) -->
+      <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 80%; z-index: 1; position: relative;">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
 
 </div>
+
+
+<div style="z-index: 999999999999999;" class="container-grid">
+  <div style=" background-image: url('images/bg/AirBrush_20240119163120.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;" class="caja1"></div>
+  <div style=" background-color: blue;" class="caja2"></div>
+  <div style=" background-color: darkblue;"class="caja3"></div>
+  <div style=" background-color: green;"class="caja4"></div>
+  <div style="background-color: brown;"class="caja5"></div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -775,7 +842,7 @@ slider-1 diseños desktop -->
       text2: document.getElementById("text2")
     };
 
-    const texts = ["que tengas", "unas hermosas", "vacaciones", "mi bombón","te quiero♥"];
+    const texts = ["performance", "prestigio", "confort", "tecnología"];
     const morphTime = 0.8;
     const cooldownTime = 1;
     let textIndex = texts.length - 1;
@@ -1028,8 +1095,7 @@ scripts-->
 .logo_scroll{
 
   width: 40%!important;
-  height: 4
-  0%!important;
+  height: 40%!important;
 }
 
   </style>
