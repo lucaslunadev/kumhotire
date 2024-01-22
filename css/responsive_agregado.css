@@ -76,6 +76,47 @@ height: 25vh!important;
 }
 
 
+.container-grid{
+
+    grid-template-areas: 
+    'caja1 caja1 caja1 caja1 '
+    'caja3 caja3 caja2 caja2 '
+    'caja3 caja3 caja2 caja2 '
+    'caja5 caja5 caja5 caja5'
+    'caja4 caja4 caja4 caja4';
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .caja1{
+    grid-area: caja1;
+  width: auto; height: 200px;
+  }
+  .caja2{
+    grid-area: caja2;
+    width: auto; height: 200px;
+  }
+  .caja3{
+    grid-area: caja3;width: auto; height: 200px;
+  }
+  .caja4{
+    grid-area: caja4;width: auto; height: 200px;
+  }
+  .caja5{
+    grid-area: caja5;width: auto; height: 200px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
 
 
 }

@@ -575,7 +575,7 @@ slider-1 diseños desktop -->
 
 <div class="">
 
-  <div style="display: grid; grid-template-columns:repeat(2, 1fr)   ;" class="section-prestigio-at52">
+  <div style="display: grid; grid-template-columns:repeat(2, 1fr); z-index: 4;   ;" class="section-prestigio-at52">
     
     <!-- Otros elementos si los hay -->
 
@@ -583,8 +583,8 @@ slider-1 diseños desktop -->
 
 
 
-    <div style="display: flex; justify-content: center; align-items:center; " class="container">
-      <div id="container-letras">
+    <div style="display: flex; justify-content: center; align-items:center;; " class="container">
+      <div style="z-index: 5" id="container-letras">
         <span id="text1"></span>
         <span id="text2"></span>
       </div>
@@ -598,14 +598,14 @@ slider-1 diseños desktop -->
     </div>
 
 
-    <div   class="" style=" display: flex; flex-direction: column; align-items: center; background-image: url(images/Mountain_BG.jpg); background-size: cover; justify-content: space-between ;">
+    <div   class="" style=" display: flex; flex-direction: column; align-items: center; background-image: url(images/Mountain_BG.jpg); background-size: cover; justify-content: space-between; ;z-index: -1;">
 
       <!-- Imagen 1 (Arriba) -->
-      <img  id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style=" margin-top: 20px;  " >
+      <img  id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style=" margin-top: 20px; z-index: -3;" >
 
 
       <!-- Imagen 2 (Abajo) -->
-      <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 80%; z-index: 1; position: relative;">
+      <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 80%; z-index:-1; position: relative;">
 
     </div>
 
@@ -630,11 +630,11 @@ slider-1 diseños desktop -->
 </div>
 
 
-<div style="z-index: 999999999999999;" class="container-grid">
+<div  class="container-grid">
   <div style=" background-image: url('images/bg/AirBrush_20240119163120.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;" class="caja1"></div>
-  <div style=" background-color: blue;" class="caja2"></div>
+  <div style=" " class="caja2"></div>
   <div style=" background-color: darkblue;"class="caja3"></div>
-  <div style=" background-color: green;"class="caja4"></div>
+  <div style=" background-image: url(images/bg/automocion.jpg); background-position: center;"class="caja4"></div>
   <div style="background-color: brown;"class="caja5"></div>
 
 
@@ -700,7 +700,7 @@ slider-1 diseños desktop -->
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const elementId = `#${entry.target.id}`;
-            const duration = '1s'; // Establece aquí la duración deseada
+            const duration = '1.5s'; // Establece aquí la duración deseada
             if (entry.target.id === 'roadventure') {
               animateCSS(elementId, 'fadeInDown', duration);
             } else if (entry.target.id === 'neumatico') {
@@ -710,7 +710,7 @@ slider-1 diseños desktop -->
         });
       }
       
-    
+  
     // Opciones para el Intersection Observer
     let options = {
       threshold: [0.1] // Se activa cuando el 50% del elemento está visible
