@@ -5,7 +5,7 @@
 
 body{
   font-family: 'Noto Sans Display', sans-serif!important;
-  background-color: rgba(0, 0, 0)!important;
+  background-color: rgb(74, 74, 73)
 }
 
 
@@ -160,10 +160,10 @@ h5{
   width: 100%;
   display: grid;
   grid-template-areas: 
-  'caja1 caja1 caja2 caja3'
-  'caja1 caja1 caja2 caja3'
-  'caja4 caja4 caja5 caja5'
-  'caja4 caja4 caja5 caja5';
+  'caja1 caja1 caja1 gallery gallery'
+  'caja1 caja1 caja1 gallery gallery'
+  'caja4 caja4 caja5 caja5 caja5'
+  'caja4 caja4 caja5 caja5 caja5';
   gap: 5px;
   margin-top: 10px;
 }
@@ -171,18 +171,173 @@ h5{
 .caja1{
   grid-area: caja1;
 width: auto; height: 400px;
+background-color: black;
+}
+.vertical-gallery{
+  grid-area: gallery;
+  width: 100%; height: 400px;
+  display: flex;
+  gap: 5px
+
 }
 .caja2{
-  grid-area: caja2;
-  width: auto; height: auto;
+background-image: url(/images/left-img.jpg);
+background-position: center;
+background-size: cover;
+  width: 0px;
+  flex-grow: 1;
+  object-fit: contain;
+  opacity: 0.5;
+  transition: .5s ease;
 }
+
+
+.caja2:hover{
+cursor: crosshair;
+width: 200px;
+opacity: 1;
+filter: contrast(100%);
+
+}
+
+.caja3:hover{
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(100%);
+  
+  }
 .caja3{
-  grid-area: caja3;width: auto; height: 400px;
+  background-image: url('path_to_your_image.jpg');
+  width: 0px;
+  flex-grow: 1;
+  object-fit: contain;
+  opacity: 0.5;
+  transition: .5s ease;
+  overflow: hidden;
+  position: relative;
+  background-color: black!important;
+  background-size: cover
+
+
 }
+
+
+
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto hace que el video cubra todo el div, similar a background-size: cover para imágenes */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .caja4{
   grid-area: caja4;width: auto; height: 400px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .caja5{
-  grid-area: caja5;width: auto; height: 400px;
+  grid-area: caja5;
+  width: auto; 
+  height: 400px;
 }
 
+
+
+
+
+
+.caja5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.caja5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.caja5:hover::before {
+  opacity: 1;
+}
+
+.caja5 h1 {
+  font-size: 100px;
+  position: relative;
+  left: -400%;
+  transition: left 0.5s ease;
+}
+
+.caja5:hover h1 {
+  left: 0;
+}
+
+.caja5 .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/bg/history_2010.jpg);
+  background-size: cover;
+  transition: transform 1s ease;
+  z-index: -1;
+}
+
+.caja5.clicked .background {
+  transform: scale(2);
+}
+
+
+.caja5.clicked h1 {
+  transform: scale(2); /* Aumenta el tamaño del texto */
+  transition: transform 0.5s ease; /* Asegúrate de agregar transición para suavizar el efecto */
+}
+
+
+.caja5 a {
+  text-decoration: none;
+  color: inherit; /* O ajusta el color como desees */
+}
+
+
+/* #container-letras{
+  background-color: black!important;
+} */
+
+.roadventure-at52{
+  display: flex; flex-direction: column; align-items: center; background-image: url(/images/Mountain_BG.jpg); background-size: cover; justify-content: space-between; ;z-index: -1;
+}

@@ -560,12 +560,12 @@ slider-1 diseños desktop -->
 
       </div>
       <div class="carousel-cell">
-        
+
       </div>
       <div class="carousel-cell">
 
       </div>
-      
+
     </div>
   </div>
 
@@ -573,81 +573,105 @@ slider-1 diseños desktop -->
 
 
 
-<div class="">
+  <div class="container">
 
-  <div style="display: grid; grid-template-columns:repeat(2, 1fr); z-index: 4;   ;" class="section-prestigio-at52">
-    
-    <!-- Otros elementos si los hay -->
+    <div style="display: grid; grid-template-columns:repeat(2, 1fr); z-index: 4; gap: 5px   ;"
+      class="">
 
-
-
+      <!-- Otros elementos si los hay -->
 
 
-    <div style="display: flex; justify-content: center; align-items:center;; " class="container">
-      <div style="z-index: 5" id="container-letras">
-        <span id="text1"></span>
-        <span id="text2"></span>
+      <div style="display: flex; justify-content: center; align-items:center;background-color: black; "
+        class="container">
+        <div id="container-letras">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+        <svg style="display: none;" id="filters">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
+            </filter>
+          </defs>
+        </svg>
       </div>
-      <svg style="display: none;" id="filters">
-        <defs>
-          <filter id="threshold">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
-          </filter>
-        </defs>
-      </svg>
+
+
+
+
+
+
+      <div class="roadventure-at52" >
+
+        <!-- Imagen 1 (Arriba) -->
+        <img id="roadventure" class="" src="images/Road_Venture_AT52.png" alt=""
+          style=" margin-top: 70px; ">
+
+
+        <!-- Imagen 2 (Abajo) -->
+        <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 150%;  ">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-
-
-    <div   class="" style=" display: flex; flex-direction: column; align-items: center; background-image: url(images/Mountain_BG.jpg); background-size: cover; justify-content: space-between; ;z-index: -1;">
-
-      <!-- Imagen 1 (Arriba) -->
-      <img  id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style=" margin-top: 20px; z-index: -3;" >
-
-
-      <!-- Imagen 2 (Abajo) -->
-      <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 80%; z-index:-1; position: relative;">
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   </div>
 
 
-</div>
+  <div class="container-grid container">
+    <div
+      style=" background-image: url('images/bg/imgkumho.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"
+      class="caja1"></div>
+
+    <div class="vertical-gallery">
+      <div style="background-color: gray ; ;" class="caja2"></div>
+
+      <div  class="caja3">
+        
+        <video autoplay muted loop id="video-background" preload="none">
+          <source src="video/nuevo-modelo-kumho.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+    </div>
 
 
-<div  class="container-grid">
-  <div style=" background-image: url('images/bg/AirBrush_20240119163120.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;" class="caja1"></div>
-  <div style="background-color: gray " class="caja2"></div>
-  <div style=" background-color: darkblue;"class="caja3"></div>
-  <div style=" background-color: green;"class="caja4"></div>
-  <div style="background-color: brown;"class="caja5"></div>
-
-
-
-
-
-</div>
 
 
 
 
 
 
+    <div style=" background-color: green;" class="caja4"></div>
+
+
+
+    <div class="caja5">
+      <div class="background"></div>
+      <a href="">
+        <h1>HISTORIA</h1>
+      </a>
+    </div>
+
+
+  </div>
 
 
 
@@ -679,54 +703,29 @@ slider-1 diseños desktop -->
 
     // Función para manejar la animación con Animate.css
     const animateCSS = (element, animation, duration = '1s', prefix = 'animate__') =>
-        new Promise((resolve, reject) => {
-          const node = document.querySelector(element);
-          const animationName = `${prefix}${animation}`;
-          
-          node.style.setProperty('--animate-duration', duration);
-          node.classList.add(`${prefix}animated`, animationName);
-      
-          function handleAnimationEnd() {
-            node.classList.remove(`${prefix}animated`, animationName);
-            resolve('Animation ended');
-          }
-      
-          node.addEventListener('animationend', handleAnimationEnd, {once: true});
-        });
-      
-    
-    // Función que se llama cuando el elemento entra o sale del campo de visión
-    function onEntry(entries, observer) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const elementId = `#${entry.target.id}`;
-            const duration = '1.5s'; // Establece aquí la duración deseada
-            if (entry.target.id === 'roadventure') {
-              animateCSS(elementId, 'fadeInDown', duration);
-            } else if (entry.target.id === 'neumatico') {
-              animateCSS(elementId, 'fadeInUp', duration);
-            }
-          }
-        });
-      }
-      
-  
-    // Opciones para el Intersection Observer
-    let options = {
-      threshold: [0.1] // Se activa cuando el 50% del elemento está visible
-    };
-    
-    // Crear un observer
-    let observer = new IntersectionObserver(onEntry, options);
-    
-    // Observar ambos elementos de la sección
-    observer.observe(document.getElementById('roadventure'));
-    observer.observe(document.getElementById('neumatico'));
-    
-    </script>
-    
+      new Promise((resolve, reject) => {
+        const node = document.querySelector(element);
+        const animationName = `${prefix}${animation}`;
 
-    
+        node.style.setProperty('--animate-duration', duration);
+        node.classList.add(`${prefix}animated`, animationName);
+
+        function handleAnimationEnd() {
+          node.classList.remove(`${prefix}animated`, animationName);
+          resolve('Animation ended');
+        }
+
+        node.addEventListener('animationend', handleAnimationEnd, { once: true });
+      });
+
+
+ 
+
+
+  </script>
+
+
+
 
 
 
@@ -776,12 +775,11 @@ slider-1 diseños desktop -->
     }
 
     #container-letras {
-      color: rgb(0, 0, 0);
       width: 100%;
       height: 50vh;
       margin: 0;
       color: aliceblue;
-      filter: url(#threshold) blur(0.6px);
+      filter: url(#threshold) blur(0.5px);
       display: flex;
       align-items: center;
     }
@@ -1070,34 +1068,33 @@ scripts-->
 
 
 
-<script>
+  <script>
 
-  // Función que se ejecuta cuando hay un evento de scroll
-  function checkScroll() {
+    // Función que se ejecuta cuando hay un evento de scroll
+    function checkScroll() {
       const element = document.getElementById('logo_img'); // Reemplaza con el ID de tu elemento
       const scrollClass = 'logo_scroll'; // Reemplaza con la clase que quieres agregar
-  
+
       if (window.scrollY > 0) { // Si el scroll es mayor a 0, estamos bajando en la página
-          element.classList.add(scrollClass);
+        element.classList.add(scrollClass);
       } else { // Si el scroll es 0, estamos en la parte superior de la página
-          element.classList.remove(scrollClass);
+        element.classList.remove(scrollClass);
       }
-  }
-  
-  // Agrega el evento de scroll a la ventana
-  window.addEventListener('scroll', checkScroll);
-  
+    }
+
+    // Agrega el evento de scroll a la ventana
+    window.addEventListener('scroll', checkScroll);
+
   </script>
-  
+
 
 
   <style>
-.logo_scroll{
+    .logo_scroll {
 
-  width: 40%!important;
-  height: 40%!important;
-}
-
+      width: 40% !important;
+      height: 40% !important;
+    }
   </style>
 
 
@@ -1109,7 +1106,7 @@ scripts-->
 
 
 
-
+  <script src="js/agregado.js"></script>
 
 
 

@@ -23,8 +23,25 @@ function crearURL(slug) {
  
     // Creo la URL en el elemento span 'texto-url' 
     document.getElementById("texto-url").innerHTML = slug;
+
+
+
+
+    
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
