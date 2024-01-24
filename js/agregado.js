@@ -9,11 +9,17 @@ document.querySelector('.caja5').addEventListener('click', function(event) {
 });
 
 // video agregado
+document.addEventListener("DOMContentLoaded", function() {
+    var videoElement = document.getElementById('video-background-patrocinadores');
+    var videoCover = document.getElementById('video-cover'); // Obtener la portada del video
 
-document.querySelector('.caja3').addEventListener('mouseenter', function() {
-    document.getElementById('video-background').play();
-});
+    videoElement.addEventListener('mouseover', function() {
+        videoElement.play();
+        videoCover.style.display = 'none'; // Ocultar la portada al reproducir el video
+    });
 
-document.querySelector('.caja3').addEventListener('mouseleave', function() {
-    document.getElementById('video-background').pause();
+    videoElement.addEventListener('mouseout', function() {
+        videoElement.pause();
+         // Mostrar la portada cuando el video se pausa//  videoCover.style.display = 'block';
+    });
 });

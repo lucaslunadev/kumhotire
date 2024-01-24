@@ -575,8 +575,7 @@ slider-1 diseños desktop -->
 
   <div class="container">
 
-    <div style="display: grid; grid-template-columns:repeat(2, 1fr); z-index: 4; gap: 5px   ;"
-      class="">
+    <div style="display: grid; grid-template-columns:repeat(2, 1fr); z-index: 4; gap: 5px   ;" class="">
 
       <!-- Otros elementos si los hay -->
 
@@ -601,15 +600,14 @@ slider-1 diseños desktop -->
 
 
 
-      <div class="roadventure-at52" >
+      <div class="roadventure-at52">
 
         <!-- Imagen 1 (Arriba) -->
-        <img id="roadventure" class="" src="images/Road_Venture_AT52.png" alt=""
-          style=" margin-top: 70px; ">
+        <img id="roadventure" class="" src="images/Road_Venture_AT52.png" alt="" style=" margin-top: 70px; ">
 
 
         <!-- Imagen 2 (Abajo) -->
-        <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 150%;  ">
+        <img id="neumatico" src="images/AT52_front.png" alt="" style="  width: 100%;  ">
 
       </div>
 
@@ -632,50 +630,44 @@ slider-1 diseños desktop -->
 
 
   </div>
+
+
+
+
+
 
 
   <div class="container-grid container">
-    <div
-      style=" background-image: url('images/bg/imgkumho.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"
-      class="caja1"></div>
-
+    <div class="caja1">
+      <div class="background"></div>
+      <a href="">
+        <h1 class="diseños">DISEÑOS</h1>
+      </a>
+    </div>
+  
     <div class="vertical-gallery">
-      <div style="background-color: gray ; ;" class="caja2"></div>
-
-      <div  class="caja3">
-        
-        <video autoplay muted loop id="video-background" preload="none">
+      <div class="caja2"></div>
+      <div class="caja3">
+        <div class="video-overlay">
+          <i class="play-icon">&#9658;</i>
+        </div>
+        <img src="images/bg/portada-video4.png" id="video-cover" alt="Video Cover" />
+        <video muted loop id="video-background-patrocinadores" preload="none">
           <source src="video/nuevo-modelo-kumho.mp4" type="video/mp4">
         </video>
-
       </div>
-
     </div>
-
-
-
-
-
-
-
-
-    <div style=" background-color: green;" class="caja4"></div>
-
-
-
+  
+    <div class="caja4"></div>
+  
     <div class="caja5">
       <div class="background"></div>
       <a href="">
-        <h1>HISTORIA</h1>
+        <h1 class="historia">HISTORIA</h1>
       </a>
     </div>
-
-
   </div>
-
-
-
-
+  
 
 
 
@@ -719,7 +711,7 @@ slider-1 diseños desktop -->
       });
 
 
- 
+
 
 
   </script>
@@ -1106,7 +1098,6 @@ scripts-->
 
 
 
-  <script src="js/agregado.js"></script>
 
 
 
@@ -1398,6 +1389,7 @@ scripts-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
 
 
+  <script src="js/agregado.js"></script>
 
 
 
