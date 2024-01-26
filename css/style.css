@@ -398,8 +398,8 @@ Page section margin padding
   Section Title 
 ***********************/
 .section-title {
-        margin-bottom: 60px;
-        text-align: center;
+/*         margin-bottom: 60px;
+comentado  */        text-align: center;
 }
 
 .section-title .separator {
@@ -2093,8 +2093,8 @@ select {
 }
 
 .owl-carousel.owl-theme .owl-dots .owl-dot {
-        margin-top: 20px;
-        display: inline-block;
+/*         margin-top: 20px;
+comentado */        display: inline-block;
 }
 
 .owl-carousel.owl-theme .owl-dots .owl-dot span {
@@ -3287,10 +3287,10 @@ select {
         border-bottom: 1px solid #f6f6f6;
 }
 
-.car-item .car-image {
+/* .car-item .car-image {
         position: relative;
         overflow: hidden;
-}
+}comentado */
 
 .car-item .car-overlay-banner {
         background: rgba(219, 45, 46, 0.7);
@@ -3350,38 +3350,39 @@ select {
 }
 
 /*car-item-2*/
-.car-item-2 .car-content {
+/* .car-item-2 .car-content {
         background: #ffffff;
         padding: 30px;
-}
+} comentado*/
 
-.car-item-2 .car-list {
+/* .car-item-2 .car-list {
         margin-bottom: 20px;
-}
+} comentado*/
 
-.car-item-2 .car-list ul li {
+/* .car-item-2 .car-list ul li {
         border: 1px solid #e3e3e3;
         padding: 2px 10px;
-}
-
+} comentado*/
+/* 
 .car-item-2 .car-content a {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
         color: #323232;
-        margin-bottom: 20px;
+        margin-bottom: 20px ;
         display: block;
-}
+        margin-top: 20px;
+} comentado*/
 
-.car-item-2 .car-content a:hover {
-        color: #db2d2e;
-}
+/* .car-item-2 .car-content a:hover {
+        color: #db2d2e; comentado
+} */
 
-.car-item-2 .price span {
+/* .car-item-2 .price span {
         color: #db2d2e;
         font-weight: 700;
         font-size: 16px;
-}
+} COMENTADO */
 
 .car-item-2 .price span.old-price {
         color: #999999;
@@ -3390,12 +3391,12 @@ select {
         font-size: 13px;
         font-weight: 400;
 }
-
+/* 
 .car-item-2 .car-image {
         position: relative;
         overflow: hidden;
-}
-
+} comentado
+ */
 .car-item-2 .car-overlay-banner {
         background: rgba(219, 45, 46, 0.7);
         position: absolute;
@@ -3428,7 +3429,7 @@ select {
         display: inline-block;
         text-align: center;
 }
-
+/* 
 .car-item-2 .car-overlay-banner ul li a {
         background: transparent;
         border: 2px solid #ffffff;
@@ -3439,8 +3440,8 @@ select {
         text-align: center;
         display: inline-block;
         border-radius: 50%;
-}
-
+} COMENTADO
+ */
 .car-item-2 .car-overlay-banner ul li a:hover {
         background: #ffffff;
         color: #db2d2e;
@@ -3707,10 +3708,10 @@ select {
 }
 
 /*social*/
-.social {
+/* .social {
         margin-bottom: 80px;
-}
-
+} comentado
+ */
 .social ul {
         width: 100%;
         display: table;
@@ -8435,9 +8436,9 @@ label:after {
         -webkit-transform-style: preserve-3d;
 }
 
-#main-slider .item img {
+/* #main-slider .item img {
         width: 100%;
-}
+} comentado */
 
 #main-slider .item .slider-content {
         z-index: 0;
@@ -9682,7 +9683,7 @@ label:after {
 
 /*car-directory-banner*/
 .car-directory-banner .search-tab {
-background: rgba(17, 20, 22, 0.5);
+background: rgb(74, 74, 73, 0.5);
 padding: 20px;
 /*  margin-top: 30px;*/  /*comentado*/       
  margin: 3%; /*agregado*/ 

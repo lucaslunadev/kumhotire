@@ -14,6 +14,18 @@
 
     }
 
+
+    .car-item-2 .car-content a{
+        text-decoration: none;
+        font-size:25px ;
+        margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(0 , 0, 0);
+        line-height: 1.4;
+      }
+    
+
     .car-top {
         display: none;
     }
@@ -39,6 +51,12 @@ justify-content: center;
 
 
 
+#video-background{
+   z-index: 10!important;
+bottom: -1px;
+margin: auto 0px!important;}
+
+
 .imagen-animada
 {width: 50%!important;
     height: 50%!important;
@@ -60,6 +78,7 @@ justify-content: center;
 
 
 #contenedor-imagenes{
+    position: relative!important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,24 +104,6 @@ justify-content: center;
   }
   
   
-  
-  
-
-  .container-grid{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    'caja1'
-    'caja1'
-    'gallery'
-    'gallery'
-    'caja4'
-    'caja4'
-    'caja5'
-    'caja5';
-    gap: 5px;
-    margin-top: 10px;
-  }
 
 
 
@@ -110,8 +111,7 @@ justify-content: center;
 
 
   .caja2{
-    background-image: url(/images/bg/at52-newyear.jpg);
-    
+background-color: black;    
     background-position: center;
     background-size: cover;
       width: 0px;
@@ -125,7 +125,7 @@ justify-content: center;
     
     .caja2:hover{
     cursor: crosshair;
-    width:70vw;
+    width:60vw;
     opacity: 1;
     filter: contrast(100%);
     
@@ -137,29 +137,8 @@ justify-content: center;
       
       }
     
-    .caja3:hover{
-      cursor: crosshair;
-      width: 70vw;
-      opacity: 1;
-      filter: contrast(100%);
-      
-      }
-    .caja3{
-      width: 0px;
-      flex-grow: 1;
-      object-fit: contain;
-      opacity: 0.6;
-      transition: 1s ease;
-      overflow: hidden;
-      position: relative;
-      background-size: cover;
-    
-    
-    }
-    .caja4{
-        height: 35vh;
 
-    }
+
     
     
 .caja1 {
@@ -176,13 +155,6 @@ justify-content: center;
   justify-content: center;
   overflow: hidden;
   }
-
-  .caja5{
-    height: 35vh;
-    background-size: contain;
-  }
-
-
 
 
 }
@@ -326,9 +298,7 @@ align-items: center!important;
 
     }
 
-    #video-background {
-        margin-bottom: 10px;
-    }
+   
 
     .carousel-diseños-movile{
         display:none;

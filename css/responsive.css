@@ -194,8 +194,8 @@ Design and Developed by: potenzaglobalsolutions.com
 .feature-car-area img { display: none; }
 .feature-car-area .feature-box-2.text-right { text-align: left; }
 .isotope .car-item .car-list li { font-size: 12px; padding: 0px 2px; }
-.footer-3 .social  { margin-bottom: 40px; }
-.footer-3 .usefull-link { margin-bottom: 50px; }
+/* .footer-3 .social  { margin-bottom: 40px; }
+ */.footer-3 .usefull-link { margin-bottom: 50px; }
 /*home-6*/
 .recent-vehicle .isotope.column-5 .grid-item { width: 33.333%; }
 .content-box-main .container { width: 100%; }
@@ -330,8 +330,8 @@ Design and Developed by: potenzaglobalsolutions.com
 }
 @media( max-width:767px) {
 h2 { font-size: 32px; }
-.section-title { margin-bottom: 40px; }
-.section-title h2 { font-size: 30px; }
+/* .section-title { margin-bottom: 40px; } comentado
+ */.section-title h2 { font-size: 30px; }
 .custom-block-1 h2 { font-size: 60px; }
 .footer .social { margin-bottom: 40px; }
 .footer .usefull-link { margin-top: 30px; }

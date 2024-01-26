@@ -23,3 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
          // Mostrar la portada cuando el video se pausa//  videoCover.style.display = 'block';
     });
 });
+
+
+
+
+    
