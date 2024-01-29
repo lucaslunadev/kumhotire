@@ -8,6 +8,7 @@ document.querySelector('.caja5').addEventListener('click', function(event) {
     }, 900); // Ajusta este tiempo según la duración total de las animaciones
 });
 
+
 // video agregado
 document.addEventListener("DOMContentLoaded", function() {
     var videoElement = document.getElementById('video-background-patrocinadores');
@@ -25,6 +26,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+  
+    function toggleSection(event) {
+      const section = event.currentTarget;
+  
+      if (section.classList.contains('open')) {
+        section.classList.remove('open');
+      } else {
+        sections.forEach(sec => sec.classList.remove('open'));
+        section.classList.add('open');
+      }
+    }
+  
+    sections.forEach(section => {
+      section.addEventListener('touchstart', toggleSection, { passive: true });
+    });
+  });
+  
 
 
     

@@ -100,46 +100,29 @@ margin: auto 0px!important;}
 
   
   .vertical-gallery{
-    height: 50vh;
+    height: 80vh;
   }
   
   
 
-
-
-
-
-
-  .caja2{
-background-color: black;    
-    background-position: center;
-    background-size: cover;
-      width: 0px;
-      flex-grow: 1;
-      object-fit: contain;
-      transition: .5s ease;
-    
-    
-    }
-    
-    
+ /*    
     .caja2:hover{
     cursor: crosshair;
     width:60vw;
     opacity: 1;
     filter: contrast(100%);
     
-    }
+    } */
 
-    .play-icon {
-        font-size: 10vw; /* Ajustar según necesidad */
-        color: white;
+  /*   .play-icon {
+        font-size: 10vw; */ /* Ajustar según necesidad */
+     /*    color: white;
       
       }
     
+ */
 
-
-    
+ /*    
     
 .caja1 {
     grid-area: caja1;
@@ -157,7 +140,7 @@ background-color: black;
   }
 
 
-}
+} */
 /* 
 #header{
     position: fixed!important
@@ -173,27 +156,44 @@ background-color: black;
 }
  */
 
+
+ /* CSS existente ... */
+
+/* Clase para manejar el estado abierto */
+.open {
+    height: 200px;
+    opacity: 1;
+    filter: contrast(100%);
+  }
+  
+  /* Clase para manejar la superposición en estado abierto */
+  .open::before {
+    opacity: 0;
+    z-index: 0;
+  }
+  
+}
  
 
 
 /* Smartphones en orientación vertical */
 @media only screen and (min-width: 400px)  and (max-width: 800px)  {
     /* Estilos adicionales para dispositivos móviles en orientación vertical */
-
+/* 
 #roadventure{
 
 
     
-}
+} */
 
 
-
+/* 
 
     .container-letra-1{
         display: flex!important;
         align-items: center!important;
     }
-    
+     */
 }
 
 
@@ -207,24 +207,24 @@ background-color: black;
 /* Tablets en orientación vertical y horizontal */
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
 
-
+/* 
     .imagen-animada
 {width: 100%!important;
     height: 100%!important;
     position: absolute!important;
 
-}
+} */
 
-
+/* 
 
 #contenedor-imagenes{
     position: relative!important;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.container_letras
+/* .container_letras
 
 {
     display: flex!important;
@@ -233,27 +233,27 @@ align-items: center!important;
 
 
 
-}
+} */
 
-
+/* 
 .container-letra-1{
     display: flex!important;
     align-items: center!important;
-}
+} */
 
     /* Estilos para tablets */
 
-
+/* 
     
     #text1, #text2{
         font-size:50px!important;
-    }
+    } */
   
-    #roadventure{
+ /*    #roadventure{
 
 
     
-    }
+    } */
     
     
 
@@ -269,7 +269,7 @@ align-items: center!important;
 
 
     
-
+/* 
     #text1, #text2{
         font-size:50px!important;
     }
@@ -280,7 +280,7 @@ align-items: center!important;
     .container-letra-1{
         display: flex!important;
         align-items: center!important;
-    }
+    } */
     
 }
 
@@ -299,13 +299,9 @@ align-items: center!important;
 
     }
 
-   
-
     .carousel-diseños-movile{
         display:none;
     }
-
-
-
-
 }
+
+
