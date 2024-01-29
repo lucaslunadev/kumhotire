@@ -103,7 +103,7 @@ margin: auto 0px!important;}
     height: 80vh;
   }
   
-  
+}
 
  /*    
     .caja2:hover{
@@ -156,35 +156,18 @@ margin: auto 0px!important;}
 }
  */
 
-
- /* CSS existente ... */
-
-/* Clase para manejar el estado abierto */
-.open {
-    height: 200px;
-    opacity: 1;
-    filter: contrast(100%);
-  }
-  
-  /* Clase para manejar la superposición en estado abierto */
-  .open::before {
-    opacity: 0;
-    z-index: 0;
-  }
-  
-}
  
 
 
 /* Smartphones en orientación vertical */
 @media only screen and (min-width: 400px)  and (max-width: 800px)  {
     /* Estilos adicionales para dispositivos móviles en orientación vertical */
-/* 
+
 #roadventure{
 
 
     
-} */
+}
 
 
 /* 
@@ -249,11 +232,11 @@ align-items: center!important;
         font-size:50px!important;
     } */
   
- /*    #roadventure{
+    #roadventure{
 
 
     
-    } */
+    }
     
     
 
@@ -299,9 +282,10 @@ align-items: center!important;
 
     }
 
+   
+
     .carousel-diseños-movile{
         display:none;
     }
+
 }
-
-
