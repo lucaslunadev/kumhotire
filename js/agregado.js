@@ -26,26 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
-  
-    function toggleSection(event) {
-      const section = event.currentTarget;
-  
-      if (section.classList.contains('open')) {
-        section.classList.remove('open');
-      } else {
-        sections.forEach(sec => sec.classList.remove('open'));
-        section.classList.add('open');
-      }
-    }
-  
-    sections.forEach(section => {
-      section.addEventListener('click', toggleSection);
-    });
-});
-
-    
 
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');

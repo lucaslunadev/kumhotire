@@ -354,7 +354,7 @@ font-weight: 900;
 /* Animación al pasar el mouse */
 @media (hover: hover) {
   .tecnologia:hover h1, .rendimiento:hover h1, .seguridad:hover h1 {
-    transform: translateX(50px); /* Desplazamos el texto hacia la derecha */
+    transform: translateX(500px); /* Desplazamos el texto hacia la derecha */
   }
 }
 
