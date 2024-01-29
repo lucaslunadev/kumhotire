@@ -1,12 +1,13 @@
 
 
 .vertical-gallery {
-  grid-area: gallery;
   width: 100%;
   display: flex;
   flex-direction: column; /* Adjust flex direction to column for vertical layout */
   gap: 5px;
   margin-top: 10px;
+  overflow-x: hidden!important;
+
 }
 
 .tecnologia,
@@ -22,15 +23,11 @@
   display: flex;
   justify-content: center;
   align-items:center;
-}
-
-
-
-.tecnologia,
-.rendimiento,
-.seguridad {
   position: relative;
+
 }
+
+
 
 .tecnologia::before,
 .rendimiento::before,
@@ -78,17 +75,17 @@
 /* Estilos CSS para el efecto de animación */
 /* Estilos CSS para el efecto de animación */
 .hide-text {
-    transform: translateX(200%); /* Traslada el texto fuera del contenedor */
+    transform: translateX(220%); /* Traslada el texto fuera del contenedor */
     opacity: 0; /* Hace que el texto sea completamente transparente */
-    transition: transform 0.5s ease, opacity 0.5s ease; /* Agrega una animación */
-    transition-delay: 0.3s; /* Agrega un retraso de 1 segundo */
+    transition: transform 0.5s ease; /* opacity 0.1s ease;  *//* Agrega una animación */
+    transition-delay: 0.5s; /* Agrega un retraso de 1 segundo */
   }
   /* Estilos para el contenedor en modo de escritorio */
   @media (min-width: 761px) {
     .tecnologia:hover h1,
     .rendimiento:hover h1,
     .seguridad:hover h1 {
-      transform: translateY(-100%); /* Traslada el texto arriba al pasar el mouse */
+      transform: translateX(220%); /* Traslada el texto arriba al pasar el mouse */
       opacity: 0; /* Hace que el texto sea completamente transparente */
     }
   }
