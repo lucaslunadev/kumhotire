@@ -159,68 +159,106 @@ transform: translate(-50%, -50%) translateX(-0.02em);
 .my-custom-button:hover {
 color: white !important;
 }
-
 .vertical-gallery {
   grid-area: gallery;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Adjust flex direction to column for vertical layout */
   gap: 5px;
   margin-top: 10px;
 }
 
+
+
 .tecnologia, .rendimiento, .seguridad {
+  /* Resto del CSS existente... */
+  position: relative;
+  overflow: hidden; /* Asegura que la superposición no exceda el tamaño del elemento */
+}
+
+.tecnologia::after, .rendimiento::after, .seguridad::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  z-index: -1; /* Coloca la superposición detrás del contenido */
+}
+
+.tecnologia:hover::after, .rendimiento:hover::after, .seguridad:hover::after {
+  opacity: 0;
+}
+
+/* Aseguramos que el texto esté encima de la superposición */
+.tecnologia h1, .rendimiento h1, .seguridad h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.tecnologia,
+.rendimiento,
+.seguridad {
   background-color: rgb(74, 74, 73);
   background-position: center;
   background-size: cover;
-  height: 0px;
+  height: 0px; /* Set initial height to 0 */
   flex-grow: 1;
   object-fit: contain;
   transition: .5s ease;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
+  align-items:center;
 }
 
-/* Cambios para hover en modo escritorio */
-@media (hover: hover) {
-  .tecnologia:hover, .rendimiento:hover, .seguridad:hover {
-    height: 200px;
-    opacity: 1;
-    filter: contrast(100%);
-  }
-
-  .tecnologia::before, .rendimiento::before, .seguridad::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    transition: opacity 0.3s ease;
-    opacity: 1;
-    z-index: 1;
-  }
-
-  .tecnologia:hover::before, .rendimiento:hover::before, .seguridad:hover::before {
-    opacity: 0;
-    z-index: 0;
-  }
+.tecnologia:hover,
+.rendimiento:hover,
+.seguridad:hover {
+  height: 200px; /* Adjust height on hover */
+  opacity: 1;
+  filter: contrast(100%);
 }
-
-/* Clase para manejar el estado abierto en dispositivos táctiles */
-.open {
-  height: 200px;
+.tecnologia:hover,
+.rendimiento:hover,
+.seguridad:hover {
+  height: 200px; /* Adjust height on hover */
   opacity: 1;
   filter: contrast(100%);
 }
 
-.open::before {
+.tecnologia,
+.rendimiento,
+.seguridad {
+  position: relative;
+}
+
+.tecnologia::before,
+.rendimiento::before,
+.seguridad::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  z-index: 1;
+}
+
+.tecnologia:hover::before,
+.rendimiento:hover::before,
+.seguridad:hover::before {
   opacity: 0;
   z-index: 0;
 }
+
+
+
 
 
 
@@ -303,4 +341,24 @@ font-weight: 900;
 
 .container-slider1{
   margin-top: 10px;
+}
+
+
+
+.tecnologia h1, .rendimiento h1, .seguridad h1 {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease; /* Añadimos transición para el desplazamiento */
+}
+
+/* Animación al pasar el mouse */
+@media (hover: hover) {
+  .tecnologia:hover h1, .rendimiento:hover h1, .seguridad:hover h1 {
+    transform: translateX(50px); /* Desplazamos el texto hacia la derecha */
+  }
+}
+
+/* Animación al hacer clic (para dispositivos táctiles y escritorio) */
+.open h1 {
+  transform: translateX(50px); /* Desplazamos el texto hacia la derecha */
 }
