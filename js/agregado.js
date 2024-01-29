@@ -10,4 +10,22 @@ document.querySelector('.caja5').addEventListener('click', function(event) {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+  
+    function toggleAnimation(event) {
+      const section = event.currentTarget;
+  
+      if (section.classList.contains('mobile-animate')) {
+        section.classList.remove('mobile-animate');
+      } else {
+        sections.forEach(sec => sec.classList.remove('mobile-animate'));
+        section.classList.add('mobile-animate');
+      }
+    }
+  
+    sections.forEach(section => {
+      section.addEventListener('click', toggleAnimation);
+    });
+  });
   
