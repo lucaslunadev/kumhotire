@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
-  
+
 
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -35,31 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleHideText(event) {
       // Solo aplica si estamos en modo móvil
       if (isMobile()) {
-        // Obtiene el elemento tocado
-        var clickedItem = event.currentTarget;
-  
-        // Obtiene todos los elementos de la galería
-        var galleryItems = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
-  
-        // Itera sobre los elementos
-        galleryItems.forEach(function(item) {
-          var textElement = item.querySelector('h1');
-          if (item !== clickedItem) {
-            textElement.classList.remove('hide-text');
-            textElement.style.transform = 'translateX(0)';
-          }
-        });
-  
         // Agrega o quita la clase 'hide-text' al texto dentro del elemento tocado
-        var textElement = clickedItem.querySelector('h1');
-        textElement.classList.toggle('hide-text');
-  
-        // Si el texto está oculto, traslada el elemento hacia arriba, de lo contrario, vuelve a su posición original
-        if (textElement.classList.contains('hide-text')) {
-          textElement.style.transform = 'translateX(200%)';
-        } else {
-          textElement.style.transform = 'translateX(0)';
-        }
+        event.currentTarget.querySelector('h1').classList.toggle('hide-text');
       }
     }
   
