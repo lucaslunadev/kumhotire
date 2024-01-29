@@ -41,10 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     sections.forEach(section => {
-      section.addEventListener('touchstart', toggleSection, { passive: true });
+      section.addEventListener('click', toggleSection);
     });
-  });
-  
-
+});
 
     
