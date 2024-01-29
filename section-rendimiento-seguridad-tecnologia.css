@@ -1,0 +1,95 @@
+
+
+.vertical-gallery {
+  grid-area: gallery;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Adjust flex direction to column for vertical layout */
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tecnologia,
+.rendimiento,
+.seguridad {
+  background-color: rgb(74, 74, 73);
+  background-position: center;
+  background-size: cover;
+  height: 0px; /* Set initial height to 0 */
+  flex-grow: 1;
+  object-fit: contain;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+
+.tecnologia,
+.rendimiento,
+.seguridad {
+  position: relative;
+}
+
+.tecnologia::before,
+.rendimiento::before,
+.seguridad::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+
+.tecnologia.expanded,
+.rendimiento.expanded,
+.seguridad.expanded {
+  height: 250px; /* Ajusta la altura al tocar */
+  opacity: 1;
+  filter: contrast(100%);
+}
+
+.tecnologia.expanded::before,
+.rendimiento.expanded::before,
+.seguridad.expanded::before {
+  opacity: 0;
+  z-index: 0;
+}
+
+.tecnologia h1,
+.rendimiento h1,
+.seguridad h1 {
+  opacity: 1; /* Asegura que el texto no tenga opacidad */
+  z-index: 2; /* Coloca el texto por encima del fondo */
+}
+
+
+
+
+/* Estilos CSS para el efecto de animación */
+/* Estilos CSS para el efecto de animación */
+.hide-text {
+    transform: translateX(200%); /* Traslada el texto fuera del contenedor */
+    opacity: 0; /* Hace que el texto sea completamente transparente */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Agrega una animación */
+    transition-delay: 0.3s; /* Agrega un retraso de 1 segundo */
+  }
+  /* Estilos para el contenedor en modo de escritorio */
+  @media (min-width: 761px) {
+    .tecnologia:hover h1,
+    .rendimiento:hover h1,
+    .seguridad:hover h1 {
+      transform: translateY(-100%); /* Traslada el texto arriba al pasar el mouse */
+      opacity: 0; /* Hace que el texto sea completamente transparente */
+    }
+  }
+  

@@ -102,6 +102,8 @@ margin: auto 0px!important;}
   .vertical-gallery{
     height: 80vh;
   }
+
+
   
 }
 
@@ -287,5 +289,23 @@ align-items: center!important;
     .carousel-diseños-movile{
         display:none;
     }
+
+
+    .tecnologia:hover,
+.rendimiento:hover,
+.seguridad:hover {
+  height: 200px; /* Adjust height on hover */
+  opacity: 1;
+  filter: contrast(100%);
+
+}
+.tecnologia:hover::before,
+.rendimiento:hover::before,
+.seguridad:hover::before {
+  opacity: 0;
+  z-index: 0;
+}
+
+
 
 }

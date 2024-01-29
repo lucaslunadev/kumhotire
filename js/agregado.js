@@ -1,31 +1,76 @@
-document.querySelector('.caja5').addEventListener('click', function(event) {
-    event.preventDefault();
-    this.classList.add('clicked');
-
-    var href = this.querySelector('a').getAttribute('href');
-    setTimeout(function() {
-        window.location.href = href;
-    }, 900); // Ajusta este tiempo según la duración total de las animaciones
-});
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+document.addEventListener("DOMContentLoaded", function() {
+    // Función para verificar si estamos en modo móvil
+    function isMobile() {
+      return window.matchMedia("only screen and (max-width: 760px)").matches;
+    }
   
-    function toggleAnimation(event) {
-      const section = event.currentTarget;
+    // Función para manejar el 'tap' (tacto)
+    function toggleExpand(event) {
+      // Solo aplica si estamos en modo móvil
+      if (isMobile()) {
+        var galleryItems = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+        // Remueve la clase 'expanded' de todos los elementos
+        galleryItems.forEach(function(item) {
+          item.classList.remove('expanded');
+        });
   
-      if (section.classList.contains('mobile-animate')) {
-        section.classList.remove('mobile-animate');
-      } else {
-        sections.forEach(sec => sec.classList.remove('mobile-animate'));
-        section.classList.add('mobile-animate');
+        // Agrega la clase 'expanded' al elemento tocado
+        event.currentTarget.classList.add('expanded');
       }
     }
   
-    sections.forEach(section => {
-      section.addEventListener('click', toggleAnimation);
+    // Añade el evento 'click' a cada elemento de la galería
+    var galleryItems = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+    galleryItems.forEach(function(item) {
+      item.addEventListener('click', toggleExpand);
     });
+  });
+  
+
+  
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Función para manejar el 'click' en modo móvil
+    function toggleHideText(event) {
+      // Solo aplica si estamos en modo móvil
+      if (isMobile()) {
+        // Obtiene todos los elementos de la galería
+        var galleryItems = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+  
+        // Itera sobre los elementos para quitar la clase 'hide-text' y restaurar la posición original del texto
+        galleryItems.forEach(function(item) {
+          var textElement = item.querySelector('h1');
+          if (item !== event.currentTarget) {
+            textElement.classList.remove('hide-text');
+            textElement.style.transform = 'translateX(0)';
+          }
+        });
+  
+        // Agrega o quita la clase 'hide-text' al texto dentro del elemento tocado
+        var textElement = event.currentTarget.querySelector('h1');
+        textElement.classList.toggle('hide-text');
+  
+        // Si el texto está oculto, traslada el elemento hacia arriba
+        if (textElement.classList.contains('hide-text')) {
+          textElement.style.transform = 'translateX(200%)';
+        } else {
+          textElement.style.transform = 'translateX(0)';
+        }
+      }
+    }
+  
+    // Añade el evento 'click' a cada elemento de la galería en modo móvil
+    var galleryItems = document.querySelectorAll('.tecnologia, .rendimiento, .seguridad');
+    galleryItems.forEach(function(item) {
+      item.addEventListener('click', toggleHideText);
+    });
+  
+    // Función para verificar si estamos en modo móvil
+    function isMobile() {
+      return window.matchMedia("only screen and (max-width: 760px)").matches;
+    }
   });
   
