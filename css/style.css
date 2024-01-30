@@ -345,8 +345,8 @@ blockquote cite {
 Page section margin padding 
 ****************************/
 .page-section-ptb {
-        padding: 80px 0;
-}
+/*         padding: 80px 0; comentado
+ */}
 
 .page-section-pt {
         padding: 80px 0 0;
@@ -405,13 +405,13 @@ comentado  */        text-align: center;
 .section-title .separator {
         position: relative;
         margin-top: 10px;
-        display: inline-block;
+        display: inline-block; 
 }
 
 .section-title h2 {
         font-size: 36px;
-        text-transform: uppercase;
-        font-weight: 600;
+/* comentado        text-transform: uppercase;
+ */        font-weight: 600;
 }
 
 .section-title span {
@@ -420,7 +420,7 @@ comentado  */        text-align: center;
 }
 
 .section-title .separator:after {
-        width: 100px;
+        width: 50px;
         display: block;
         margin: auto;
         content: "";
@@ -441,7 +441,7 @@ comentado  */        text-align: center;
         margin: auto;
         left: 50%;
         height: 1px;
-        width: 50px;
+        width: 100px;
         bottom: -15px;
         background: #db2d2e;
         transition: width .8s ease, background-color .8s ease;
@@ -2956,8 +2956,8 @@ comentado */        display: inline-block;
           Testimonial
 **************************************/
 .testimonial-1 .testimonial-block .testimonial-avtar {
-        margin-top: -65px;
-        position: relative;
+/*         margin-top: -65px; COMENTADO
+ */        position: relative;
         z-index: 1;
 }
 
@@ -2979,11 +2979,11 @@ comentado */        display: inline-block;
 
 .testimonial-1 .testimonial-block .testimonial-box {
         background: #f6f6f6;
-        padding: 20px;
-}
+/*   comentado      padding: 20px;
+ */}
 
 .testimonial-1 .testimonial-block .testimonial-content {
-        margin-top: 20px;
+        /* margin-top: 20px; */
         color: #999999;
 }
 
@@ -8347,6 +8347,7 @@ label:after {
 
 .testimonial-5 .testimonial-box {
         padding: 20px 120px;
+
 }
 
 .testimonial-5 .testimonial-content {
@@ -9684,7 +9685,7 @@ label:after {
 /*car-directory-banner*/
 .car-directory-banner .search-tab {
 background: rgb(74, 74, 73, 0.5);
-padding: 20px;
+padding:1px 19px 19px 19px;
 /*  margin-top: 30px;*/  /*comentado*/       
  margin: 3%; /*agregado*/ 
  text-align: left;
@@ -9718,10 +9719,10 @@ padding: 20px;
 .car-directory-banner .search-tab #tabs .tabcontent {
         overflow: visible;
         margin-bottom: 0;
-        border-top: 5px solid rgba(0, 0, 0, 0.5);
-        padding-top: 20px;
-        margin-top: 10px;
-}
+/*         border-top: 5px solid rgba(0, 0, 0, 0.5); comentado
+ */      /*   padding-top: 20px; comentado */
+/*         margin-top: 10px; comentado
+ */}
 
 .car-directory-banner .search-tab #tabs .tabcontent .selected-box .select-styled {
         background: #6d7377;

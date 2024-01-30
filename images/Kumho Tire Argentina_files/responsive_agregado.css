@@ -1,0 +1,313 @@
+/* Para dispositivos móviles:
+ */
+/* Smartphones en orientación vertical y horizontal */
+@media only screen and (max-width: 800px) {
+    /* Estilos para dispositivos móviles */
+
+    .search-tab-desktop
+
+    /* quitar buscador desktop en movile */
+        {
+
+        display: none;
+
+
+    }
+
+
+    .car-item-2 .car-content a{
+        text-decoration: none;
+        font-size:25px ;
+        margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(0 , 0, 0);
+        line-height: 1.4;
+      }
+    
+
+    .car-top {
+        display: none;
+    }
+
+#rev_slider_5_1_wrapper{
+    display: none!important;
+}
+
+#text1, #text2{
+    font-size:25px!important;
+
+}
+
+#container-letras{
+padding: 10px;
+height: 25vh!important;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+
+#video-background{
+   z-index: 10!important;
+/* bottom: -1px;
+ */margin: auto 0px!important;}
+
+
+.imagen-animada
+{width: 50%!important;
+    height: 50%!important;
+    position: absolute!important;
+
+}
+.neumaticos{
+      width: 350px
+}
+
+ .bg-17 {
+    background-image: url(/images/bg/AirBrush_20240119163120.jpg);
+    ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}  
+
+
+
+#contenedor-imagenes{
+    position: relative!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#roadventure{
+    width: 80%!important;
+
+
+
+}
+
+.section-prestigio-at52{
+    grid-template-columns: 1fr!important
+
+}
+
+
+  
+  .vertical-gallery{
+    height: 80vh;
+  }
+
+
+  
+}
+
+ /*    
+    .caja2:hover{
+    cursor: crosshair;
+    width:60vw;
+    opacity: 1;
+    filter: contrast(100%);
+    
+    } */
+
+  /*   .play-icon {
+        font-size: 10vw; */ /* Ajustar según necesidad */
+     /*    color: white;
+      
+      }
+    
+ */
+
+ /*    
+    
+.caja1 {
+    grid-area: caja1;
+  width: auto;
+   height: 35vh;
+  background-image: url(/images/bg/imgkumho.png);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  }
+
+
+} */
+/* 
+#header{
+    position: fixed!important
+   
+
+
+}  */
+
+/* #video-background{
+    margin-top: 50px;
+}
+
+}
+ */
+
+ 
+
+
+/* Smartphones en orientación vertical */
+@media only screen and (min-width: 400px)  and (max-width: 800px)  {
+    /* Estilos adicionales para dispositivos móviles en orientación vertical */
+
+#roadventure{
+
+
+    
+}
+
+
+/* 
+
+    .container-letra-1{
+        display: flex!important;
+        align-items: center!important;
+    }
+     */
+}
+
+
+
+
+
+
+
+/* Para dispositivos de pantalla pequeña (como tablets):
+ */
+/* Tablets en orientación vertical y horizontal */
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+
+/* 
+    .imagen-animada
+{width: 100%!important;
+    height: 100%!important;
+    position: absolute!important;
+
+} */
+
+/* 
+
+#contenedor-imagenes{
+    position: relative!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .container_letras
+
+{
+    display: flex!important;
+    justify-content: center!important;
+align-items: center!important;
+
+
+
+} */
+
+/* 
+.container-letra-1{
+    display: flex!important;
+    align-items: center!important;
+} */
+
+    /* Estilos para tablets */
+
+/* 
+    
+    #text1, #text2{
+        font-size:50px!important;
+    } */
+  
+    #roadventure{
+
+
+    
+    }
+    
+    
+
+}
+
+
+
+/* Para laptops y pantallas medianas:
+ */
+/* Laptops y pantallas medianas en orientación horizontal */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos para laptops y pantallas medianas en orientación horizontal */
+
+
+    
+/* 
+    #text1, #text2{
+        font-size:50px!important;
+    }
+
+
+
+
+    .container-letra-1{
+        display: flex!important;
+        align-items: center!important;
+    } */
+    
+}
+
+
+
+
+/* Para pantallas de escritorio:
+ */
+
+/* Pantallas de escritorio en orientación horizontal */
+@media only screen and (min-width:800px) {
+    /* Estilos para pantallas de escritorio en orientación horizontal */
+
+    .search-tab-movile {
+        display: none;
+
+    }
+
+   
+
+    .carousel-diseños-movile{
+        display:none;
+    }
+
+
+    .tecnologia:hover,
+.rendimiento:hover,
+.seguridad:hover {
+  height: 200px; /* Adjust height on hover */
+  opacity: 1;
+  filter: contrast(100%);
+
+}
+.tecnologia:hover::before,
+.rendimiento:hover::before,
+.seguridad:hover::before {
+  opacity: 0;
+  z-index: 0;
+}
+
+.item{
+    overflow-y: hidden;
+  }
+
+}
