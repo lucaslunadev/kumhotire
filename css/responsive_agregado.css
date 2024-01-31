@@ -4,6 +4,11 @@
 @media only screen and (max-width: 800px) {
     /* Estilos para dispositivos móviles */
 
+
+
+   #header{
+        position: fixed!important;
+    }
     .search-tab-desktop
 
     /* quitar buscador desktop en movile */
@@ -311,3 +316,32 @@ align-items: center!important;
   }
 
 }
+
+
+
+
+
+
+
+
+
+             
+/* Media query para pantallas mayores (no móviles) */
+@media (min-width: 600px) {
+    .slide-track {
+      width: calc(200px * 18); /* Ajusta este valor según tus necesidades */
+      animation: scroll-desktop 40s linear infinite;
+    }
+  
+    @keyframes scroll-desktop {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-250px * 9)); /* Ajusta este valor según tus necesidades */
+      }
+    }
+  }
+
+
+

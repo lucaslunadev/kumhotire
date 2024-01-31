@@ -347,10 +347,10 @@ Page section margin padding
 .page-section-ptb {
 /*         padding: 80px 0; comentado
  */}
-
-.page-section-pt {
+/* 
+.page-section-pt { comentado
         padding: 80px 0 0;
-}
+} */
 
 .page-section-pb {
         padding: 0 0 80px;
@@ -3734,12 +3734,12 @@ comentado */        display: inline-block;
         display: block;
         color: #fff;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 00;
         text-transform: uppercase;
 }
 
 .social ul li a i {
-        font-size: 30px;
+        font-size: 50px!important;
         vertical-align: middle;
         color: rgba(255, 255, 255, 0.4);
         float: right;
@@ -4074,8 +4074,8 @@ footer .copyright ul li a:hover {
 }
 
 .footer-3 {
-        background: #101010;
-}
+/*         background: #101010; comentado
+ */}
 
 .footer-3 p {
         color: #909090;
