@@ -289,6 +289,10 @@ align-items: center!important;
 
     }
 
+    .footer-escritorio{
+        display: none;
+    }
+
    
 
     .carousel-diseños-movile{
