@@ -144,7 +144,7 @@ Design and Developed by: potenzaglobalsolutions.com
 .search-top { padding: 19px 20px; }
 .mega-menu .menu-links > li:last-child { border-bottom: 0px; }
 .search-top.search-top-open .search-box { top: 52px !important;  }
-#header.defualt { position: relative; background: #323232; }
+#header.defualt { position: relative; background: #323232!important; }
 #header.light .mega-menu .menu-mobile-collapse-trigger:before,  #header.light .mega-menu .menu-mobile-collapse-trigger:after,  #header.light .mega-menu .menu-mobile-collapse-trigger span { background: #db2d2e; }
 .welcome-block p { padding: 0px; }
 .feature-box { margin-bottom: 30px; }

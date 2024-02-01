@@ -86,6 +86,9 @@
     });
   </script>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 
 <body>
@@ -102,7 +105,7 @@
   <!--=================================
   header -->
 
-  <header id="header" class="defualt">
+  <header style="background-color: #3d3d3d;" id="header" class="defualt">
 
     <!--=================================
   mega menu -->
@@ -279,7 +282,7 @@
   <!--=================================
   buscador movile -->
 
-  <div style="margin-top: 75px;" class="section-title">
+  <div style="margin-top: 75px;" class="section-title encontratuneumatico">
     <h2>Encontrá tu neumático
 
     </h2>
@@ -558,14 +561,15 @@
 
   <!-- diseños movile-->
 
-  <div class="section-title">
+  <div class="section-title nuestrosdiseños">
     <h2>Nuestros diseños</h2>
     <div class="separator"></div>
   </div>
 
 
 
-  <div class="carousel" data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": 2000}'>
+  <div class="carousel nuestrosdiseños"
+    data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": 2000}'>
 
     <div class="carousel-cell">
 
@@ -619,6 +623,38 @@
       <h1>seguridad</h1>
     </div>
   </div>
+
+
+
+
+  <style>
+    @media (max-width: 800px) {
+
+
+      .slide-track {
+        display: flex;
+        width: calc(200px * 18);
+        /* 200 valor predeterminado */
+        ;
+        animation: scroll 40s linear infinite;
+      }
+
+
+      .slider {
+        height: 150px;
+        position: relative;
+        width: 90%;
+        display: grid;
+        place-items: center;
+        overflow: hidden !important;
+        /*   margin-bottom: 10px;
+   */
+        margin: auto;
+      }
+
+
+    }
+  </style>
 
 
   <!-- 
@@ -1059,7 +1095,18 @@
 
 
 
-  <div class="section-title">
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div style=";" class="section-title">
     <h2>Marcas que nos elijen </h2>
     <div class="separator"></div>
   </div>
@@ -1078,14 +1125,28 @@
 
 
       <div class="slide"><img src="images/clients/01.png" alt=""></div>
-      <div class="slide"><img src="images/clients/02.png" alt=""></div>
       <div class="slide"><img src="images/clients/03.png" alt=""></div>
+
+      <div class="slide"><img src="images/clients/02.png" alt=""></div>
       <div class="slide"><img src="images/clients/04.png" alt=""></div>
       <div class="slide"><img src="images/clients/05.png" alt=""></div>
       <div class="slide"><img src="images/clients/06.png" alt=""></div>
       <div class="slide"><img src="images/clients/07.png" alt=""></div>
       <div class="slide"><img src="images/clients/08.png" alt=""></div>
       <div class="slide"><img src="images/clients/03.png" alt=""></div>
+
+
+      <div class="slide"><img src="images/clients/01.png" alt=""></div>
+      <div class="slide"><img src="images/clients/04.png" alt=""></div>
+
+      <div class="slide"><img src="images/clients/02.png" alt=""></div>
+      <div class="slide"><img src="images/clients/03.png" alt=""></div>
+      <div class="slide"><img src="images/clients/05.png" alt=""></div>
+      <div class="slide"><img src="images/clients/06.png" alt=""></div>
+      <div class="slide"><img src="images/clients/07.png" alt=""></div>
+      <div class="slide"><img src="images/clients/08.png" alt=""></div>
+      <div class="slide"><img src="images/clients/03.png" alt=""></div>
+
 
 
 
@@ -1101,16 +1162,6 @@
 
 
   </div>
-
-  </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -1134,21 +1185,16 @@
   <!--=================================
   footer   -->
 
-  <footer class="footer-2 page-section-pt footer-escritorio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div style="margin-top: 25px; " class="about-content text-center ">
-            <img style="margin-bottom:9px; width: 60%; height: 60%;" class="img-fluid" id="logo-footer"
-              src="images/KUMHO TIRE_CI_B-01 (2).PNG" alt="">
+  <footer style="width: 100vw; " class="footer-2 page-section-pt footer-escritorio">
 
-          </div>
+    <div style="background-color: ;" class="container-fluid ">
 
 
-          <hr style="border: 0;
-            height: 4px;
-            background-color: #3d3d3d; 
-            margin: 20px 20px; ">
+      <div style="margin-top: 25px;display: flex; justify-content: center; width: 100%; background-color: #3d3d3d; "
+        class="container-fluid">
+
+
+        <img style="margin-bottom:9px; width: 50%; " class="img-fluid" src="images/KUMHO TIRE_CI_B-01 (2).PNG" alt="">
 
 
 
@@ -1157,10 +1203,30 @@
 
 
 
-          <div style="margin: " class="col-lg-3 col-md-6">
+      </div>
+
+
+      <hr style="border: 0;
+      height: 4px;
+      background-color: #3d3d3d; 
+      margin: 20px 20px; ">
+
+      <div class="">
+        <div class="">
+
+
+
+
+
+
+
+
+
+
+          <div class="">
             <div class="keep-touch">
-              <!--              <h6 class="text-white">keep in touch</h6>
-  -->
+              <!--              <h6 class="text-white">keep in touch</h6>-->
+
 
               <div class="address">
 
@@ -1195,7 +1261,8 @@
                   background-color: #3d3d3d; 
                   margin: 5px  ">
 
-                <h6 style="margin-bottom: 20px!important ; margin-top: 20px;" class="text-white">Nuestras sucursales:</h6>
+                <h6 style="margin-bottom: 20px!important ; margin-top: 20px; " class="text-white">Nuestras sucursales:
+                </h6>
 
                 <div style="margin-bottom: 20px;">
                   <ul>
@@ -1205,8 +1272,7 @@
 
                     <li> <i class="fa fa-map-marker"></i><span>Diamante 371, Godoy Cruz - Mendoza</span> </li>
                     <li> <i class="fa fa-phone"></i><span> (0261) 405-3000</span> </li>
-                    <!--                       <li> <i class="fa fa-envelope-o"></i><span>support@website.com</span> </li>
-  -->
+                    <!--                       <li> <i class="fa fa-envelope-o"></i><span>support@website.com</span> </li>-->
                   </ul>
 
 
@@ -1304,13 +1370,13 @@
 
 
 
-            <hr style="border: 0;
+                <hr style="border: 0;
   height: 4px;
   background-color: #3d3d3d; 
   margin: 20px 0; ">
 
 
-            <!-- 
+                <!-- 
               
               <div class="social">
                 <ul>
@@ -1323,7 +1389,7 @@
               </div>
 
   -->
-            <!-- 
+                <!-- 
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="usefull-link">
@@ -1373,7 +1439,7 @@
           </div>
       </div> 
       </div>  -->
-          <!-- </div> -->
+                <!-- </div> -->
 
 
 
@@ -1381,91 +1447,86 @@
 
 
 
-          <div style="display: flex; justify-content: space-around;">
-
-
-            <div  class="">
-              <p>
-                Importador oficial
-              </p>
-
-            </div>
-
-
-            <div class="">
-
-              <img style="width: 10em" src="images/Guerrini-01.svg" alt="">
-
-            </div>
+                <div style="display: flex; justify-content: space-around;background-color: #75717148; padding: 20px;">
 
 
 
-          </div>
+                  <div class="">
 
-          <div style="background-color: #75717148; padding: 20px;" class=" container-fuid">
-            <ul class="list-inline text-lg-right text-center">
-              <li><a style="" href="#">Política y Privacidad </a> | </li>
-              <li><a href="#">Términos y Condiciones</a> |</li>
-              <li><a href="#">Contactanos </a></li>
-            </ul>
-          </div>
+                    <img style="width: 10em" src="images/Guerrini-01.svg" alt="">
+
+                  </div>
 
 
-        </div>
+
+                </div>
+
+                <!--   <div style="background-color: #75717148; padding: 20px;" class=" container-fuid">
+                  <ul class="list-inline text-lg-right text-center">
+                    <li><a style="" href="#">Política y Privacidad </a> | </li>
+                    <li><a href="#">Términos y Condiciones</a> |</li>
+                    <li><a href="#">Contactanos </a></li>
+                  </ul>
+                </div>
+ -->
+
+              </div>
   </footer>
 
 
 
+  <style>
+    @media (max-width: 800px) {
+
+
+
+      .footer-escritorioo {
+        display: none !important;
+      }
+    }
+  </style>
+
 
   <!--=================================
   footer escritorio  -->
-  <footer class="footer-2 page-section-pt">
+  <footer class="footer-2 page-section-pt footer-escritorioo">
     <div class="container-fluid">
-      <div class="row">
+      <div style="" class="">
 
 
-        <div style="display: flex!important; justify-content: space-between;" class="">
+        <div style="display: flex!important; justify-content: space-evenly; align-items: center;" class="">
 
-          <div style="margin-top: 25px; ;" class="about-content text-center ">
+          <div style=";" class="about-content text-center ">
 
             <img style="margin-bottom:9px; width: 80%; height: 20%;; ;" class="img-fluid" id="logo-footer"
               src="images/KUMHO TIRE_CI_B-01 (2).PNG" alt="">
-            </img>
 
 
             <hr style="border: 0;
           height: 4px;
           background-color: #3d3d3d; 
-          margin: 20px 20px; ">
+          margin: 20px 20px 30px 20px;
+          width: 250px; ">
 
 
-            <div class="div">
-              <h6 style="margin-bottom: 20px!important ;" class="text-white">Canales de contaco:</h6>
 
-              <div style="display: flex; flex-direction:column; justify-content: center; align-items: center;" class="">
-
-                <div style="margin-left: ;gap: 10px; align-items: center;display: flex; margin-bottom: 15px;">
+            <div style="display: flex; justify-content: center; flex-direction: column; gap: 10px;" class=" text-center">
 
 
-                  <i style="  " class="fa fa-phone fa-2x"></i><span style="font-size: 1.5em;">0800 122 2001</span>
-                </div>
 
 
-                <div style="margin-left: ;gap: 10px; align-items: center;display: flex; margin-bottom: 15px;">
+
+              <img style="width: 100%;" src="images/Guerrini-01.svg" alt="">
+
+              <h6 style="margin-left: 30px;">Importador Exclusivo</h6>
 
 
-                  <i style="  " class="fa fa-whatsapp fa-2x"></i><span style=" font-size: 1.5em">2612052000</span>
-                </div>
-
-
-                <span style="font-size: 1em;">Atención al cliente de lunes a viernes de 8.30 a 19hs. <br> Sábados
-                  de
-                  8.30 a 13hs.</span>
-
-
-              </div>
 
             </div>
+
+
+
+
           </div>
 
 
@@ -1520,23 +1581,7 @@
 
               </div>
 
-              <div style="margin-bottom: 20px;">
-                <ul>
-                  <li style="font-size: 15px; font-weight: 500!important; color: #FFFFFF;" class="punto-medio">CENTRO
-                    DE DISTRIBUCIÓN Y VENTAS ZONA SUR</li>
-
-
-                  <li> <i class="fa fa-map-marker"></i><span>Perticone 1137, Neuquén
-                    </span> </li>
-                  <li> <i class="fa fa-phone"></i><span>Tel: (0299) 440-2682</span> </li>
-
-                </ul>
-
-
-
-
-              </div>
-
+              
 
 
 
@@ -1661,17 +1706,79 @@
 
 
 
-          <div class="copyright">
+          <div style="display: flex; align-items: center;  ;" class="">
             <div class="container">
+              
 
               <div class="">
+                <div class="div">
+
+                  <div style="margin-bottom: 20px;">
+                    <ul>
+                      <li style="font-size: 15px; font-weight: 500!important;  list-style-type:none; color:#FFFFFF;" class="punto-medio">CENTRO
+                        DE DISTRIBUCIÓN Y VENTAS ZONA SUR</li>
+    
+    
+                      <li style="list-style-type:none; "> <i style="padding-right: 10px;" class="fa fa-map-marker"></i><span>Perticone 1137, Neuquén
+                        </span> </li>
+                      <li style="list-style-type:none;"> <i style="padding-right: 10px;" class="fa fa-phone"></i><span>Tel: (0299) 440-2682</span> </li>
+    
+                    </ul>
+    
+    
+    
+    
+                  </div>
+    
+
+                  
+            <hr style="border: 0;
+            height: 4px;
+            background-color: #3d3d3d; 
+            margin: 20px 20px 20px 20px;
+            width: 200px; ">
+                  <h6 style="margin-bottom: 20px!important ;" class="text-white">Canales de contaco:</h6>
+
+                  <div style=" "
+                    class="">
+
+                    <div class="" style="gap: 10px; align-items: center;display: flex; margin-bottom: 15px;">
 
 
-                <div style="display: flex; align-items: center;" class="text-lg-left text-center">
-                  <p>Importador Oficial <a style="margin-left: 15px;" href="https://guerrinisa.com/"
-                      target="_blank"><img style="width: 45%;" src="images/Guerrini-01.svg" alt=""></a></p>
+                      <i style="  " class="fa fa-phone fa-2x"></i><span style="font-size: 1.5em;">0800 122 2001</span>
+
+                    </div>
+
+
+                    <div style=" ;gap: 10px; align-items: center;display: flex; margin-bottom: 15px;">
+
+
+                      <i style="  " class="fa fa-whatsapp fa-2x"></i><span style=" font-size: 1.5em">2612052000</span>
+                    </div>
+
+
+                   <!--  <span style="font-size: 1em;">Atención al cliente de lunes a viernes de 8.30 a 19hs. <br> Sábados
+                      de
+                      8.30 a 13hs.</span>
+ -->
+
+                  </div>
 
                 </div>
+
+
+                <!-- <div class="text-lg-left text-center">
+
+                  <p style="display: flex; align-items: center;flex-direction: column; gap:50px;">Importador Oficial <a
+                      style="margin-left: 15px;" href="https://guerrinisa.com/" target="_blank">
+
+                      <img style="width: 45%;" src="images/Guerrini-01.svg" alt="">
+
+                    </a>
+
+                  </p>
+
+                </div> -->
 
 
               </div>
@@ -1680,14 +1787,14 @@
           </div>
         </div>
 
-
+<!-- 
         <div style="background-color: #75717148; padding: 20px;" class=" container-fuid">
           <ul class="list-inline text-lg-right text-center">
             <li><a style="" href="#">Política y Privacidad </a> | </li>
             <li><a href="#">Términos y Condiciones</a> |</li>
             <li><a href="#">Contactanos </a></li>
           </ul>
-        </div>
+        </div> -->
 
 
   </footer>

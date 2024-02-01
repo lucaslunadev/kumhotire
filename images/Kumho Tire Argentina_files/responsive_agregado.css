@@ -1,7 +1,7 @@
 /* Para dispositivos móviles:
  */
 /* Smartphones en orientación vertical y horizontal */
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     /* Estilos para dispositivos móviles */
 
     .search-tab-desktop
@@ -12,7 +12,41 @@
         display: none;
 
 
+
     }
+
+
+    .footer-escritorioo{
+        display: none!important;
+    }
+
+
+
+
+
+ 
+      
+.slider {
+    height: 150px!important;
+    position: relative;
+    width: 100%!important;
+    display: grid;
+    place-items: center;
+    overflow: hidden !important;
+    /*   margin-bottom: 10px;
+   */
+   margin: auto;
+  }
+
+  .slide>img {
+    width: 100px!important;
+    transition: transform 1s;
+  }
+  
+  .slide img:hover {
+    transform: translateZ(20px);
+  }
+  
 
 
     .car-item-2 .car-content a{
@@ -107,6 +141,8 @@ justify-content: center;
   
 }
 
+
+
  /*    
     .caja2:hover{
     cursor: crosshair;
@@ -172,6 +208,7 @@ justify-content: center;
 }
 
 
+
 /* 
 
     .container-letra-1{
@@ -180,9 +217,6 @@ justify-content: center;
     }
      */
 
-     .footer-escritorio{
-        display: none!important;
-    }
 
 }
 
@@ -244,12 +278,7 @@ align-items: center!important;
 
     
     }
-    .footer-escritorio{
-        display: none!important;
-    }
-
-    
-    
+   
 
 }
 
@@ -276,11 +305,7 @@ align-items: center!important;
         align-items: center!important;
     } */
 
-    .footer-escritorio{
-        display: none!important;
-    }
-
-    
+  
 }
 
 
@@ -298,9 +323,7 @@ align-items: center!important;
 
     }
 
-    .footer-escritorio{
-        display: none!important;
-    }
+ 
 
    
 
@@ -327,5 +350,31 @@ align-items: center!important;
 .item{
     overflow-y: hidden;
   }
+
+
+  .slide-track {
+    display: flex;
+    width: calc(200px * 18);
+    /* 200 valor predeterminado */
+    ;
+    animation: scroll 40s linear infinite;
+  }
+  
+  
+.slider {
+    height: 150px;
+    position: relative;
+    width: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden !important;
+    /*   margin-bottom: 10px;
+   */
+   margin: auto;
+  }
+
+  
+
+  
 
 }

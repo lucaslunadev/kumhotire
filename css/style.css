@@ -1208,8 +1208,8 @@ select {
     Header 
 *************************/
 #header.defualt {
-        background: transparent;
-        z-index: 999;
+/*         background: transparent;comentado
+ */        z-index: 999;
         padding: 0px;
         margin: 0px;
         position: absolute;

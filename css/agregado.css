@@ -246,17 +246,18 @@ transform: translate(-50%, -50%) translateX(-0.02em);
 .slider {
   height: 150px;
   position: relative;
-  width: 100%;
+  width: 50%;
   display: grid;
   place-items: center;
   overflow: hidden !important;
   /*   margin-bottom: 10px;
  */
+ margin: auto;
 }
 
 .slide-track {
   display: flex;
-  width: calc(200px * 18);
+  width: calc(150px * 18);
   /* 200 valor predeterminado */
   ;
   animation: scroll 40s linear infinite;
@@ -310,7 +311,7 @@ transform: translate(-50%, -50%) translateX(-0.02em);
   position: absolute;
   justify-content: space-around;
   display: flex;
-  width: 30%;
+  width: 20%;
   z-index: 2;
 }
 
@@ -332,7 +333,7 @@ transform: translate(-50%, -50%) translateX(-0.02em);
 
 
 .slide>img {
-  width: 100px;
+  width: 150px;
   transition: transform 1s;
 }
 

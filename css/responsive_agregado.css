@@ -331,7 +331,7 @@ align-items: center!important;
 
              
 /* Media query para pantallas mayores (no móviles) */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .slide-track {
       width: calc(200px * 18); /* Ajusta este valor según tus necesidades */
       animation: scroll-desktop 40s linear infinite;
@@ -345,6 +345,30 @@ align-items: center!important;
         transform: translateX(calc(-250px * 9)); /* Ajusta este valor según tus necesidades */
       }
     }
+#header{
+    height: 10vh!important;
+    padding: 0px!important;
+}
+.menu-list-items{
+margin-top: -5px!important
+   ;
+}
+
+
+#logo_img{
+    margin-top: -5px!important;
+}
+
+
+.encontratuneumatico{
+    display: none;
+}
+
+
+.nuestrosdiseños{
+    display: none;
+}
+
   }
 
 
