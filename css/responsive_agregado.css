@@ -4,8 +4,10 @@
 @media only screen and (max-width: 800px) {
     /* Estilos para dispositivos móviles */
 
+.horizontal-gallery{
 
-
+    display: none!important;
+}
    #header{
         position: fixed!important;
     }
@@ -368,6 +370,31 @@ margin-top: -5px!important
 .nuestrosdiseños{
     display: none;
 }
+
+
+
+/* Contenedor padre que contiene los items de tecnología, rendimiento y seguridad */
+.contenedor-padre {
+    display: flex;
+    flex-direction: column; /* Cambia de row a column para disposición vertical */
+    align-items: center; /* Centra los items si deseas, ajusta según necesidad */
+  }
+  
+  /* Clase para los elementos individuales si necesitas ajustes específicos */
+  .tecnologia, .rendimiento, .seguridad {
+    margin-bottom: 20px; /* Asegura espacio entre elementos */
+    width: 100%; /* Ajusta el ancho según necesites */
+    /* Añade aquí más estilos específicos si es necesario */
+  }
+
+  
+    /* Contenedor padre que contiene los items de tecnología, rendimiento y seguridad */
+.contenedor-padre {
+ display: none;
+  }
+  
+ 
+  
 
   }
 

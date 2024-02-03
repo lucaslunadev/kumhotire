@@ -38,3 +38,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   
+document.addEventListener("DOMContentLoaded", function() {
+  const contenedores = document.querySelectorAll('.horizontal-gallery > div');
+
+  contenedores.forEach(function(contenedor) {
+    contenedor.addEventListener('mouseenter', function() {
+      // Añade la clase para reducir el tamaño del texto a todos los otros contenedores
+      contenedores.forEach(function(otroContenedor) {
+        if (otroContenedor !== contenedor) {
+          otroContenedor.classList.add('texto-pequeno');
+        }
+      });
+    });
+
+    contenedor.addEventListener('mouseleave', function() {
+      // Quita la clase de reducción de tamaño de texto de todos los contenedores
+      contenedores.forEach(function(otroContenedor) {
+        otroContenedor.classList.remove('texto-pequeno');
+      });
+    });
+  });
+});
